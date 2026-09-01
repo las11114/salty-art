@@ -1,12 +1,11 @@
 import Image from "next/image";
+import IdentImage from "../assets/images/salt_ident.png"
 
 export default function Home() {
   return (
     <div className="flex flex-col h-screen items-center justify-center space-y-20">
       <div className="flex items-end">
-        <p className="text-6xl">
-          Website coming soon!
-        </p>
+        <Image className="w-100" src={IdentImage} alt=""/>
       </div>
       <div className="flex flex-col items-center space-y-5">
         <div className="text-xl">
