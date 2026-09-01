@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: "/salty-art",
-  output: "export",  // <=== enables static exports
-  reactStrictMode: true,
+  output: 'export',
+  basePath: process.env.PAGES_BASE_PATH,
 };
 
 export default nextConfig;
